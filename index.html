@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cinematography Academy</title>
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+  <!-- icon -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="./img/icon.png" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <!-- bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="style1.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle JS (Bootstrap JS + Popper.js) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '509498704741415'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=509498704741415&ev=PageView
+  &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+<style>
+  .hero-banner .carousel-item {
+    height: 100vh;
+    /* Full height */
+    min-height: 300px;
+    /* Minimum height to ensure content is visible on small screens */
+  }
+
+  .hero-banner .carousel-item img {
+    object-fit: cover;
+    /* Cover the entire area */
+    height: 100%;
+    /* Make the image cover the full height */
+    width: 100%;
+    /* Ensure the image covers the full width */
+  }
+
+  .hero-banner {
+      position: relative;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 100vh;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+
+    .carousel-caption img {
+      max-width: 100%;
+    }
+
+    .carousel-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item img {
+        height: auto;
+      }
+
+      .carousel-caption {
+        right: -89px;
+    position: absolute;
+    top: 55%;
+    left: -18%;
+    transform: translateY(-114%);
+    text-align: center;
+        /* position: static; */
+        margin-top: 90px;
+      }
+
+      .carousel-caption img {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+</style>
+
+<body style="background-color: #fff !important;">
+
+  <div style="overflow: hidden;">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="https://cinemafactory.co.in/">
+        <img src="./img/headerlogo.webp" alt="Logo">
+      </a>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <a class="nav-link " href="index.html">Home</a> -->
+        <a class="nav-link " href="#course">Course</a>
+        <a class="nav-link " href="#mentor">Mentors</a>
+        <a class="nav-link " href="#contact">Contact</a>
+      </div>
+      <span class="d-md-none" onclick="openNav()">&#9776;</span>
+      <div class="collapse navbar-collapse menu-links" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " href="#course">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#mentor">Mentors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=9884683888" target="_blank" rel="noopener noreferrer">
+          <div class="whatsapp-icon">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-white"
+              height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+              </path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <!-- <section class="hero-banner">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="5000"> 
+      Slides
+      <div class="carousel-inner">
+        Slide 1
+        <div class="carousel-item active">
+          <img src="./img/final/banner1.png" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption">
+            <img src="./img/c1.png" alt="" class="img-fluid custom-img-size">
+          </div>
+        </div>
+        Slide 2
+        <div class="carousel-item">
+          <div class="carousel-overlay"></div>
+          <img src="./img/final/banner2.png" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-caption">
+            <img src="./img/c2.png" alt="" class="img-fluid custom-img-size">
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel Indicators -->
+        <!-- Commented out as per request to remove content -->
+        
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" data-aos="fade-up">
+                <img src="./img/main banner 1 (1).jpg" class="d-block w-100" alt="Slide 1">
+                <div class="overlay"></div> <!-- Overlay div for image cover -->
+                <!-- Removed content here -->
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item" data-aos="fade-up">
+                <img src="./img/main banner 1 (2).jpg" class="d-block w-100" alt="Slide 2">
+                <div class="overlay"></div> <!-- Overlay div for image cover -->
+                <!-- Removed content here -->
+            </div>
+        </div>
+
+         <!-- Previous and Next controls --> 
+         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> 
+    </div>
+</section>
+
+
+<script>
+    // Activate the carousel with auto slide
+    $(document).ready(function() {
+        $('#heroCarousel').carousel({
+            interval: 3000 // Adjust interval (in milliseconds) as needed
+        });
+    });
+</script>
+
+
+  <!-- course -->
+  <div class="container  mt-5" data-aos="zoom-in" style="overflow: hidden;">
+    <div class="highlight-section">
+      <h3 class="highlight-title">Cinematography Course Highlights at Cinema Factory</h3>
+      <ul class="highlight-list">
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-book-open"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Experience Our Newly Designed Syllabus!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-video"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Master Rigging Camera and Lights on Vehicles!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-moon"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Excel in Elaborate Night Lighting Practices!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-drafting-compass"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Strong Foundation in Composition Techniques!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-film"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Deep Dive into Screenplay and Direction Techniques!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-camera"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Build Confidence with Modern Digital Cameras!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-video"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Explore Leading Camera Lenses: RED, ARRI, SONY, PANASONIC, BLACK MAGIC, COOKE,
+            CANON, NIKON!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Cover Over 300 Topics in Modern Cinematography!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-lightbulb"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Encourage Creativity and Experimentation!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-user-friends"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Engage in Close, Friendly Interaction with Industry Masters!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Utilize Apps to Control Lighting!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-plane"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Participate in Exciting Shooting Visits!</p>
+        </li>
+        <li class="highlight-item" data-aos="fade-right">
+          <i class="fas fa-video"></i>&nbsp;&nbsp;&nbsp;
+          <p style="font-family: poppins;">Film a Web Series as a DoP During Your Studies!</p>
+        </li>
+      </ul>
+      <!-- <div class="cta" data-aos="fade-right">
+        <button class="btn" style="font-family: poppins;">Join Cinema Factory and transform your cinematography skills
+          today!</button>
+      </div> -->
+    </div>
+  </div>
+   <!-- End Container -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+  <script>
+    function openTab(tabId) {
+      var tabs = document.getElementsByClassName("tab-pane");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("show", "active");
+      }
+      document.getElementById(tabId).classList.add("show", "active");
+    }
+  </script>
+
+
+   <!-- webseries and overseas  -->
+   <h3 class="text-center my-5 h1"> Benefits of Shooting Web Series at Cinema Factory Film Academy:
+  </h3>
+  <div class="container mt-5" id="contact" data-aos="fade-right" style="overflow: hidden;">
+    <div class="row feature-tabs">
+      <div class="col-lg-6 cour mt-5" data-aos="fade-right">
+        <img src="./img/webseries.png" class="img-fluid" alt="" style="width: 100%; margin-top: -85px;">
+      </div>      
+      <div class="col-lg-6">
+        <div class="highlight-card" data-aos="fade-right" style="font-family:poppins;">
+          <h5><i class="fas fa-film" style="color: rgb(170, 166, 166);"></i> Stand Out From the Crowd</h5>
+          <p style="font-family: poppins;">Explore the booming web series market to enhance storytelling skills, gain hands-on filmmaking experience, build your brand with on-screen credits, and foster creativity through collaborative team projects.</p>
+        </div>
+  
+        <div class="highlight-card" data-aos="fade-right" style="font-family: poppins;">
+          <h5><i class="fas fa-film" style="color: rgb(165, 164, 164);"></i> Learning by Doing</h5>
+          <p style="font-family: poppins;">Gain comprehensive filmmaking experience from pre-production to post-production, mastering effective budgeting under real-world constraints essential for future projects.</p>
+        </div>
+        <div class="highlight-card" data-aos="fade-right" style="font-family:poppins;">
+          <h5><i class="fas fa-film" style="color: rgb(190, 188, 188);"></i> Building Your Brand</h5>
+          <p style="font-family: poppins;">Earn on-screen credits to establish your filmmaking identity and enrich your portfolio, gaining a competitive edge by graduating with a completed web series.</p>
+        </div>
+        <div class="highlight-card" data-aos="fade-right" style="font-family: poppins;">
+          <h5><i class="fas fa-film" style="color: rgb(175, 173, 173);"></i> Boosting Your Creativity</h5>
+          <p style="font-family: poppins;">Craft and execute multi-episode stories to expand creative boundaries within a collaborative environment, honing essential communication and teamwork skills for your film career.</p>
+        </div>
+        <!-- Repeat the above structure for other highlight cards as needed -->
+      </div>
+    </div>
+  </div>
+  
+  
+  <h3 class="text-center my-5 h1">Advantages of Cinema Factory's Overseas Shooting Program:</h3>
+  
+  <div class="container mt-5" id="contact" data-aos="fade-right" style="overflow: hidden; ">
+    <div class="row feature-tabs">
+      <div class="col-lg-6">
+        <div class="highlight-card" data-aos="fade-right" style="font-family:poppins;">
+          <h5><i class="fas fa-camera" style="color: rgb(163, 177, 190);"></i> Become a Packing Pro</h5>
+          <p style="font-family: poppins;">Learn to travel light with essential filmmaking gear, maximizing efficiency and minimizing hassle.</p>
+        </div>
+        <div class="highlight-card" data-aos="fade-right" style="font-family:poppins;">
+          <h5><i class="fas fa-camera" style="color:  rgb(163, 177, 190);"></i> Location Scout Savy</h5>
+          <p style="font-family: poppins;">Master the fundamentals of photography, laying the groundwork for visual storytelling and cinematography.</p>
+        </div>
+        <div class="highlight-card" data-aos="fade-right" style="font-family:Poppins;">
+          <h5><i class="fas fa-camera" style="color:  rgb(163, 177, 190);"></i> Tech Titans on Location</h5>
+          <p style="font-family: poppins;">Develop data management skills and learn to adapt your filming techniques to diverse climates.</p>
+        </div>
+        <div class="highlight-card" data-aos="fade-right" style="font-family:poppins;">
+          <h5><i class="fas fa-camera" style="color:  rgb(163, 177, 190);"></i> Global Citizens & Filmmakers</h5>
+          <p style="font-family: poppins;">Navigate international film shoots with cultural sensitivity and ensure legal compliance.</p>
+        </div>
+        <!-- Repeat the above structure for other highlight cards as needed -->
+      </div>
+      <div class="col-lg-6 cour mt-5" data-aos="fade-right">
+        <img src="./img/trip (1).png" class="img-fluid" alt="" style="width: 100%; margin-top: -85px;">
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- video -->
+  <video controls autoplay loop muted poster="path/to/your-poster-image.jpg"
+    style="width: 100%; overflow: hidden; margin-top: 50px;" id="myVideo">
+    <source src="./img/cinemato.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<script>
+  const video = document.getElementById('myVideo');
+
+// Function to hide video controls
+function hideControls() {
+  video.controls = false;
+}
+
+// Function to show video controls
+function showControls() {
+  video.controls = true;
+}
+</script>
+
+
+  <!-- oneyear course -->
+  <h3 class="text-center my-5 h1" id="course">One Year Cinematography Course Details</h3>
+
+  <section id="faq" class="faq">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row gy-4">
+        
+        <div class="col-lg-7 order-2 order-lg-1">
+          <div class="accordion accordion-flush px-xl-5" id="faqlist" data-aos="fade-up">
+            
+            <!-- Month 1-6 Foundation of Course -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq-header-1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1" style="font-family: poppins; background-color: #9fa9b3; color: #ffffff;">
+                  <i class="bi bi-question-circle question-icon"></i>
+                  Month 1-6: Foundation of Course
+                </button>
+              </h2>
+              <div id="faq-content-1" class="accordion-collapse collapse" aria-labelledby="faq-header-1" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <h5 style="font-family: poppins;">History of Cinema and Film Appreciation</h5>
+                      <p>
+                        Explore the evolution of cinema and its profound impact on society and culture. Analyze iconic films, decode cinematic language, and gain a deeper appreciation for the art of storytelling.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 style="font-family: poppins;">Photography Fundamentals</h5>
+                      <p>
+                        Master the fundamentals of photography, laying the groundwork for visual storytelling and cinematography.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 style="font-family: poppins;">Advanced Cinematography Techniques</h5>
+                      <p>
+                        From lighting and composition to motion control and editing, delve into advanced techniques that push the boundaries of visual storytelling.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+            
+            <!-- Month 7-12: Advanced Cinematography and Web series Productions -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq-header-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2" style="font-family: poppins; background-color:#9fa9b3; color: #ffffff;" >
+                  <i class="bi bi-question-circle question-icon" style="font-family: poppins;"></i>
+                  Month 7-12: Advanced Cinematography and Web Series Productions
+                </button>
+              </h2>
+              <div id="faq-content-2" class="accordion-collapse collapse" aria-labelledby="faq-header-2" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <h5 style="font-family: poppins;">Cinematography Post Production</h5>
+                      <p>
+                        Explore the nuances of post-production, harnessing the power of cutting-edge technology to elevate your storytelling.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 style="font-family: poppins;">Pre-Production for Web Series Production</h5>
+                      <p>
+                        Bring your creative vision to life as you delve into the pre-production process for web series production. Develop concepts, scout locations, and craft budgets under the guidance of industry professionals.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 style="font-family: poppins;">Industry Exposure and Overseas Trip</h5>
+                      <p>
+                        Immerse yourself in the global film industry with an unforgettable overseas trip. Gain firsthand experience in international filmmaking practices and forge connections that last a lifetime.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 style="font-family: poppins;">Feature Film or Web Series Production</h5>
+                      <p>
+                        Collaborate with your peers to produce a feature film or web series, applying your newfound skills to create captivating content that resonates with audiences worldwide.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+            
+            <!-- Finally: Assessment and Evaluation -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faq-header-3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2" style="font-family: poppins; background-color:#9fa9b3; color: #ffffff;" >
+                  <i class="bi bi-question-circle question-icon" style="font-family: poppins;"></i>
+                  Finally:- Assessment and Evaluation 
+                </button>          
+              </h3>
+              <div id="faq-content-3" class="accordion-collapse collapse" aria-labelledby="faq-header-3" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <h5 style="font-family: poppins;">Real-world Projects</h5>
+                      <p>
+                        Showcase your skills through hands-on projects, including the production of a feature film or web series.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 style="font-family: poppins;">Industry Visits</h5>
+                      <p>
+                        Gain insights from industry experts through visits to production studios, post-production houses, and film sets.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 style="font-family: poppins;">Global Perspective</h5>
+                      <p>
+                        Broaden your horizons with an overseas trip that exposes you to diverse cultures and filmmaking practices.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+            
+          </div><!-- .accordion -->
+        </div><!-- .col-lg-7 -->
+        
+        <div class="col-lg-5 align-items-stretch order-1 order-lg-2">
+          <img src="./img/courses.png" class="img-fluid" alt="Background Image">
+        </div><!-- .col-lg-5 -->
+        
+      </div><!-- .row -->
+    </div><!-- .container-fluid -->
+  </section>
+  <!-- End F.A.Q Section -->
+  
+  
+  <!-- highlights -->
+  <h3 class="text-center  my-5 h1">Exclusive features</h3>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-2 col-sm-6">
+        <div class="card scroll text-center">
+          <img src="img/highlights icons/EMI.png" alt="Image 1" class="img-fluid">
+          <div class="txt">
+            <p>Emi Facilities</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card scroll text-center">
+          <img src="img/highlights icons/Award.png" alt="Image 2" class="img-fluid">
+          <div class="txt">
+            <p>Learn from Film Makers</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card scroll text-center">
+          <img src="img/highlights icons/Tour.png" alt="Image 3" class="img-fluid">
+          <div class="txt">
+            <p>Overseas Tour</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card scroll text-center">
+          <img src="img/highlights icons/CAmera.png" alt="Image 4" class="img-fluid">
+          <div class="txt">
+            <p>Hands on Experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card scroll text-center">
+          <img src="img/highlights icons/webseries.png" alt="Image 5" class="img-fluid">
+          <div class="txt">
+            <p>Web Series</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- advantages 
+  <div class="container-fluid bg-light p-md-5 p-0" style="overflow: hidden;">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        Benefits of Shooting Web Series 
+        <div class="col-md-6 col-12 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title" style="font-family: poppins;"><i
+                  class="fas fa-video"></i>&nbsp;&nbsp;&nbsp;&nbsp;Benefits of Shooting Web Series
+              </h2><br>
+              <ul>
+                <li data-aos="zoom-in">
+                  <h5 style="font-family: poppins;">Web Series are the New Trend</h5>
+                  <p style="font-family: poppins;">Unlike the saturated market of short films, web series are a booming
+                    industry with fresh audience
+                    demand.</p>
+                </li>
+                <li data-aos="zoom-in">
+                  <h5 style="font-family: poppins;">Deeper Storytelling</h5>
+                  <p style="font-family: poppins;">Explore characters and narratives in greater detail, showcasing your
+                    storytelling skills and
+                    audience engagement abilities.</p>
+                </li>
+              </ul>
+              <ul>
+                <li data-aos="zoom-in">
+                  <h5 style="font-family: poppins;">Hands-on Experience</h5>
+                  <p style="font-family: poppins;">Produce a complete project, gaining experience in all aspects of
+                    filmmaking - from pre-production
+                    to post.</p>
+                </li>
+                <li data-aos="zoom-in">
+                  <h5 style="font-family: poppins;">Budget Management</h5>
+                  <p style="font-family: poppins;">Learn the art of filmmaking within realistic constraints, a crucial
+                    skill for future projects.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        Advantages of Overseas Shooting Program 
+           <div class="col-md-6 col-12 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title" style="font-family: poppins;"><i class="fas fa-globe"></i> Advantages of Overseas
+                Shooting Program</h2><br>
+              <ul>
+                <li data-aos="zoom-in">
+                  <h5 style="font-family: poppins;">Become a Packing Pro</h5>
+                  <p style="font-family: poppins;">Learn to travel light with essential filmmaking gear, maximizing
+                    efficiency and minimizing hassle.
+                  </p>
+                </li>
+                <li data-aos="zoom-in">
+                  <h5 style="font-family: poppins;">Location Scout Savvy</h5>
+                  <p style="font-family: poppins;">Master the art of finding perfect shooting locations, considering
+                    lighting, permits, and cultural
+                    nuances.</p>
+                </li>
+                <li data-aos="zoom-in">
+                  <h5 style="font-family: poppins;">Tech Titans on Location</h5>
+                  <p style="font-family: poppins;">Develop data management skills and learn to adapt your filming
+                    techniques to diverse climates.</p>
+                </li>
+                <li data-aos="zoom-in">
+                  <h5 style="font-family: poppins;">Global Citizens & Filmmakers</h5>
+                  <p style="font-family: poppins;">Navigate international film shoots with cultural sensitivity and
+                    ensure legal compliance.</p>
+                </li>
+              </ul>
+              <h4 class="card-subtitle mb-3 mt-4 text-muted" style="font-family: poppins;">What You'll Learn</h4>
+              <ul>
+                <li data-aos="zoom-in" style="font-family: poppins;">Pre-production planning for international shoots
+                </li>
+                <li data-aos="zoom-in" style="font-family: poppins;">Cultural awareness and communication on set</li>
+                <li data-aos="zoom-in" style="font-family: poppins;">Adapting your filmmaking skills to new environments
+                </li>
+                <li data-aos="zoom-in" style="font-family: poppins;">Risk assessment and safety protocols for overseas
+                  productions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Row -->
+    </div><!-- End Container -->
+  </div><!-- End Container Fluid -->
+  <!-- directors -->
+  <div class="modal fade" id="aranthai" tabindex="-1" aria-labelledby="popupFormLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popupFormLabel" style="font-family: poppins;">Aranthai Manian - Principal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./img/course/aranthi.png" class="card-img-top" alt="..."
+                  style="border: 5px solid #f9f9f9; border-radius: 20px;" width="100px">
+              </div>
+              <div class="col-md-6">
+                <div class="profile-card">
+                  <h2>Aranthai Manian - Principal</h2>
+                  <h3>Multi-Faceted Talent</h3>
+                  <ul>
+                    <li><i class="fas fa-film"></i>Filmmaker</li>
+                    <li><i class="fas fa-pen"></i>Film critic</li>
+                    <li><i class="fas fa-book-reader"></i>Scholar</li>
+                    <li><i class="fas fa-history"></i>Historian</li>
+                    <li><i class="fas fa-tv"></i>Actor with credits in television serials, documentaries, and
+                      advertisement films</li>
+                  </ul>
+                  <h3>Education and Training</h3>
+                  <ul>
+                    <li><i class="fas fa-graduation-cap"></i>Post-graduate degree in English Literature</li>
+                    <li><i class="fas fa-scroll"></i>Diploma in Journalism</li>
+                    <li><i class="fas fa-video"></i>Completed a course in Screenplay Writing and Direction at the Film
+                      and Television Institute of India, Pune</li>
+                  </ul>
+                  <h3>Authorship</h3>
+                  <ul>
+                    <li><i class="fas fa-book"></i>Authored 35 books in Tamil</li>
+                    <li><i class="fas fa-book-open"></i>Covered a range of subjects including films, music, biography,
+                      and history</li>
+                  </ul>
+                  <h3>Film Industry Experience</h3>
+                  <ul>
+                    <li><i class="fas fa-star"></i>Directed legendary actor Shivaji Ganesan in television</li>
+                  </ul>
+                </div>
+                <div class="social-links" >
+                  <a href="https://www.facebook.com/aranthai.manian" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <!-- Add more social media icons as needed -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cj -->
+  <div class="modal fade" id="cj" tabindex="-1" aria-labelledby="popupFormLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popupFormLabel">CJ Rajkumar - HOD of the Cinematography Department</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./img/course/cj_rajkumar.png" class="card-img-top" alt="..."
+                  style="border: 5px solid #f9f9f9; border-radius: 20px;">
+              </div>
+              <div class="col-md-6">
+                <div class="profile-card">
+                  <h2>CJ Rajkumar - HOD of the Cinematography Department</h2>
+                  <ul>
+                    <li><i class="fas fa-book"></i>First to author 12 books on cinematography technology</li>
+                    <li><i class="fas fa-pen"></i>Written over 500 articles on cinematography for the Southern India
+                      Cinematographers Association website</li>
+                    <li><i class="fas fa-trophy"></i>Films have won numerous awards at international film festivals,
+                      including the Berlin Film Festival in 2009</li>
+                    <li><i class="fas fa-film"></i>Renowned for contributions to both cinematic literature and practical
+                      cinematography</li>
+                    <li><i class="fas fa-thumbs-up"></i>Books on cinematography appreciated by legends such as Balu
+                      Mahendra, PC Sreeram, and Santhosh Sivan</li>
+                  </ul>
+                </div>
+                <div class="social-links" >
+                  <a href="https://www.facebook.com/cjrdop" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <!-- Add more social media icons as needed -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ramesh -->
+  <div class="modal fade" id="Ramesh" tabindex="-1" aria-labelledby="popupFormLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popupFormLabel">A. Ramesh Kumar Mentor Cinematography Department</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./img/course/ramesh.png" class="card-img-top" alt="..."
+                  style="border: 5px solid #f9f9f9; border-radius: 20px;">
+              </div>
+              <div class="col-md-6">
+                <div class="profile-card">
+                  <h2>A. Ramesh Kumar Mentor Cinematography Department</h2>
+                  <h3>Achievements and Contributions</h3>
+                  <ul>
+                    <li><i class="fas fa-eye"></i>Visionary cinematographer behind the trend-setting visuals of 'Oomai
+                      Vizhigal', a film that revolutionized Tamil cinema</li>
+                    <li><i class="fas fa-video"></i>Instrumental in bringing the cinemascope format into popular
+                      filmmaking</li>
+                    <li><i class="fas fa-chalkboard-teacher"></i>Pioneered the integration of high-quality film
+                      education into leading film institutes</li>
+                    <li><i class="fas fa-bullhorn"></i>Set new trends in advertising with over 800 filmed commercials
+                    </li>
+                    <li><i class="fas fa-lightbulb"></i>Renowned for his innovative and influential contributions to
+                      both cinema and advertising</li>
+                  </ul>
+                </div>
+                <div class="social-links" >
+                  <a href="https://www.facebook.com/people/Cinematographer-Ramesh-Kumar/pfbid02mBte7hQdaCx4yaK68BWhmVLjZGiDaLSUqGjZcxBxnrdZa1ZJpQCRVbkNYTaEz1Lsl/?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <!-- Add more social media icons as needed -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Prasana -->
+  <div class="modal fade" id="Prasana" tabindex="-1" aria-labelledby="popupFormLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popupFormLabel">R. Prasanna Venkatesh - Mentor Cinematography Department</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./img/course/prasana.png" class="card-img-top" alt="..." style="border: 5px solid #f9f9f9; border-radius: 20px;">
+              </div>
+              <div class="col-md-6">
+                <div class="profile-card">
+                  <h2>R. Prasanna Venkatesh - Mentor Cinematography Department</h2>
+                  <ul>
+                    <li><i class="fas fa-camera"></i> 23 years of professional experience in People and Advertising photography</li>
+                    <li><i class="fas fa-camera"></i> Official photographer for Hillary Clinton's visit to Kalakshetra in 2011</li>
+                    <li><i class="fas fa-camera"></i> Official photographer for President of India, Shri Pranab Mukherji, at Kalakshetra on August 7th, 2013</li>
+                    <li><i class="fas fa-camera"></i> Official photographer for Rolls Royce Motor Cars' new car launch</li>
+                  </ul>
+                  <!-- Social media links -->
+                  <div class="social-links" >
+                    <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- Add more social media icons as needed -->
+                  </div>
+                  <style>
+                    .social-links {
+                      margin-top: 10px; /* Adjust top margin for spacing */
+                    }
+                  
+                    .social-links a {
+                      display: inline-block;
+                      margin-right: 15px; /* Adjust spacing between icons */
+                      font-size: 24px; /* Adjust icon size if necessary */
+                      color: #333; /* Adjust icon color */
+                    }
+                  </style>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <h3 class="text-center  my-5 h1" id="mentors"> Masters of the Craft: Guiding the Next Generation</h3>
+  <div class="container-fluid" style="overflow: hidden;">
+    <div class="row">
+      <div class="col-md-3 col-12 d-flex justify-content-center mb-4">
+        <div class="card" style="width: 18rem; border-radius: 20px;">
+          <img src="./img/course/aranthi-black.png" class="card-img-top" alt="..." style="border-radius: 20px;">
+          <div class="card-body">
+            <h3 class="card-titl">Aranthai Maniyan</h3>
+            <p class="card-text">Introducing Aranthai Manian, a multifaceted filmmaker and educator from Tamil Nadu,
+              India.</p>
+            <a href="#" class="btn btn-primary text-white" data-toggle="modal" data-target="#aranthai">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-12 d-flex justify-content-center mb-4">
+        <div class="card" style="width: 18rem; border-radius: 20px;">
+          <img src="./img/course/cj_rajkumar_gray.png" class="card-img-top" alt="..." style="border-radius: 20px;">
+          <div class="card-body">
+            <h3 class="card-titl">CJ Raj Kumar</h3>
+            <p class="card-text">HOD of our Cinematography Department, is a renowned cinematographer.</p>
+            <a href="#" class="btn btn-primary text-white" data-toggle="modal" data-target="#cj">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-12 d-flex justify-content-center mb-4">
+        <div class="card" style="width: 18rem; border-radius: 20px;">
+          <img src="./img/course/ramesh_gray.png" class="card-img-top" alt="..." style="border-radius: 20px;">
+          <div class="card-body">
+            <h3 class="card-titl">A. Ramesh Kumar</h3>
+            <p class="card-text">Mentor of our Cinematography Department, revolutionized Tamil cinema with 'Oomai
+              Vizhigal'.</p>
+            <a href="#" class="btn btn-primary text-white" data-toggle="modal" data-target="#Ramesh">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-12 d-flex justify-content-center mb-4">
+        <div class="card" style="width: 18rem; border-radius: 20px;">
+          <img src="./img/course/prasana_gray.png" class="card-img-top" alt="..." style="border-radius: 20px;">
+          <div class="card-body">
+            <h3 class="card-titl">R. Prasanna Venkatesh</h3>
+            <p class="card-text">Mentor of our Cinematography Department, boasts 23 years of expertise.</p>
+            <a href="#" class="btn btn-primary text-white" data-toggle="modal" data-target="#Prasana">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="container" id="faq" style="overflow: hidden;">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center  my-5 h1">Frequently Asked Questions</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="card-faq" data-aos="fade-right">
+            <div class="card-header" id="headingOne">
+              <h4 class="clearfix mb-0">
+                <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne" style="font-family: poppins;"><i class="fa fa-chevron-circle-down"></i> Provide more details about the
+                  overseas trip offered by Cinema
+                  Factory?</a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">The overseas trip is a unique opportunity for students to gain international
+                exposure and
+                experience.
+                It
+                typically spans three days and includes immersive activities related to the film industry, such as
+                workshops, film screenings, or visits to renowned film studios. This trip allows students to broaden
+                their
+                horizons, network with professionals, and gain insights into global filmmaking practices.</div>
+            </div>
+          </div>
+          <div class="card-faq" data-aos="fade-left">
+            <div class="card-header" id="headingTwo">
+              <h2 class="clearfix mb-0">
+                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo" style="font-family: poppins;"><i class="fa fa-chevron-circle-down"></i> What
+                  courses does Cinema Factory offer?</a>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">Cinema Factory offers a one-year course in Screenplay and Direction, Digital
+                Cinematography, Film
+                Editing
+                and VFX, Acting, and Choreography as weekend courses. Cinema Factory will offer special one-month
+                professional filmmaking courses soon at various parts of South India.</div>
+            </div>
+          </div>
+          <div class="card-faq" data-aos="fade-right">
+            <div class="card-header" id="headingThree">
+              <h2 class=" clearfix mb-0">
+                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree" style="font-family: poppins;"><i class="fa fa-chevron-circle-down"></i>How is
+                  the course structured?</a>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">The first six months cover the major portions of the syllabus, while the second
+                term focuses on
+                industry
+                visits and filming a web series.</div>
+            </div>
+          </div>
+          <div class="card-faq" data-aos="fade-left">
+            <div class="card-header" id="headingFour">
+              <h2 class=" clearfix mb-0">
+                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour" style="font-family: poppins;"><i class="fa fa-chevron-circle-down"></i>Are
+                  there
+                  any financial assistance options available for students?</a>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">Yes, Cinema Factory offers EMI facilities to students.</div>
+            </div>
+          </div>
+          <div class="card-faq" data-aos="fade-right">
+            <div class="card-header" id="headingOne">
+              <p class=" clearfix clearfix mb-0">
+                <a class="btn btn-link" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true"
+                  aria-controls="collapsesix" style="font-family: poppins;"><i class="fa fa-chevron-circle-down"></i> What certifications do
+                  students
+                  receive upon completion of the
+                  course?</a>
+              </p>
+            </div>
+            <div id="collapsesix" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+              <div class="card-body">Students receive an NFDC certificate upon completion of the course.</div>
+            </div>
+          </div>
+          <div class="card-faq" data-aos="fade-left">
+            <div class="card-header" id="headingTwo">
+              <h2 class=" clearfix mb-0">
+                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseeight"
+                  aria-expanded="false" aria-controls="collapseeight" style="font-family: poppins;"><i class="fa fa-chevron-circle-down"></i> Are
+                  there
+                  placement opportunities available for graduates?</a>
+              </h2>
+            </div>
+            <div id="collapseeight" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">Cinema Factory strives to offer placements in the film and media industry on a
+                requirement basis.</div>
+            </div>
+          </div>
+          <div class="card-faq" data-aos="fade-right">
+            <div class="card-header" id="headingThree">
+              <h2 class=" clearfix mb-0">
+                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseseven"
+                  aria-expanded="false" aria-controls="collapseseven" style="font-family: poppins;"><i class="fa fa-chevron-circle-down"></i>What
+                  opportunities do students have for practical experience?</a>
+              </h2>
+            </div>
+            <div id="collapseseven" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">Students have the opportunity to shoot a web series while studying and
+                participate
+                in a 3-day
+                overseas
+                trip.</div>
+            </div>
+          </div>
+          <div class="card-faq" data-aos="fade-left">
+            <div class="card-header" id="headingFour">
+              <h2 class=" clearfix mb-0">
+                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsenine"
+                  aria-expanded="false" aria-controls="collapsenine" style="font-family: poppins;"><i class="fa fa-chevron-circle-down"></i>Who
+                  teaches the courses at Cinema Factory?</a>
+              </h2>
+            </div>
+            <div id="collapsenine" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">Our regular faculties include award-winning filmmakers who bring their expertise
+                to
+                the classroom.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end faq -->
+
+  <!-- contact -->
+  <h3 class="text-center  my-5 h1" id="contact">Contact Us</h3>
+  <div class="container mt-5" id="contact" data-aos="fade-right" style="overflow: hidden;">
+    <div class="row">
+      <!-- Form Column -->
+      <div class="col-lg-7" style="margin-top: -150px;">
+        <div class="con-img">
+          <img src="./img/contact/contact.png" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+      <!-- Image Column -->
+      <div class="col-lg-5 mb-5">
+        <form id="myForm" action="" name="contact-form" method="post">
+          <div class="form-group">
+            <label for="name"style="font-family: poppins;">Name</label>
+            <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your name" required style="font-family: poppins;">
+          </div>
+          <div class="form-group">
+            <label for="email"style="font-family: poppins;">Email</label>
+            <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email" required style="font-family: poppins;">
+          </div>
+          <div class="form-group">
+            <label for="Phone"style="font-family: poppins;">Phone Number</label>
+            <input type="tel" class="form-control" id="Phone" name="Phone" placeholder="Enter your phone number"
+              required style="font-family: poppins;">
+          </div>
+          <div class="form-group">
+            <label for="location"style="font-family: poppins;">State</label>
+            <input type="text" class="form-control" id="location" name="State" placeholder="Enter your state" required style="font-family: poppins;">
+          </div>
+          <div class="form-group">
+            <label for="District"style="font-family: poppins;">District</label>
+            <input type="text" class="form-control" id="District" name="District" placeholder="Enter your district"
+              required style="font-family: poppins;">
+          </div>
+          <!-- <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="Message" rows="4"
+              placeholder="Enter your message here..."></textarea>
+          </div> -->
+          <button type="submit" class="btn btn-primary"style="font-family: poppins;">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzCQVOQnwy6GUwhef_aycTI4q7zx4pPn1niMUWU0Moe8mUmCQEBKS5OtQmYkd2ljSzU/exec'
+
+    const form = document.forms['contact-form']
+
+    form.addEventListener('submit', e => {
+
+      e.preventDefault()
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+
+        .then(response => alert("Thank you! your form is submitted successfully."))
+        .then(() => { window.location.reload(); })
+
+        .catch(error => console.error('Error!', error.message))
+
+    })
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- start footer -->
+  <footer class="site-footer  pt-5" style="background-color: #f3f3f3;" style="overflow: hidden;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+            <img src="./img/icon.png" class=" w-40 sm:w-20 md:w-44 opacity-90 object-cover drop-shadow-lg" alt="">
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-2">
+          <div class="footer-widget footer-widget__links">
+            <p class="footer-widget__title" style="font-family: poppins;">Courses </p>
+            <br>
+            <ul class="footer-widget__links-list list-unstyled">
+              <li><a href="https://direction.cinemafactory.co.in/" style="font-family: poppins;">Direction</a></li>
+              <li><a href="https://cinematography.cinemafactory.co.in/" style="font-family: poppins;">Cinematography</a></li>
+              <li><a href="https://editing.cinemafactory.co.in/" style="font-family: poppins;">Editing</a></li>
+              <li><a href="https://vfx.cinemafactory.co.in/" style="font-family: poppins;">CG & VFX</a></li>
+              <li><a href="#" style="font-family: poppins;">Contact</a></li>
+            </ul><!-- /.footer-widget__links-list -->
+          </div><!-- /.footer-widget -->
+        </div><!-- /.col-lg-2 -->
+
+        <div class="col-lg-3 ">
+          <div class="footer-widget footer-widget__contact">
+            <p class="footer-widget__title" style="font-family: poppins;">Contact</p>
+            <p style="font-family: poppins;">BigBay Cinema Factory Private Ltd.</p>
+            <p style="font-family: poppins;">No.271A, 3rd Floor,<br> Maan Sarovar
+              Tower, Scheme Road,Teynampet,<br> Chennai-600018,India</p>
+            <i class="fas fa-envelope"></i><a href="mailto:contact@cinemafactory.co.in"
+              class="text-dark">contact@cinemafactory.co.in</a></i>
+          </div><!-- /.footer-widget -->
+        </div><!-- /.col-lg-3 -->
+
+        <div class="col-lg-3">
+          <div class="footer-widget footer-widget__open-hrs">
+            <p class="footer-widget__title" style="font-family: poppins;">Open
+              Hours</p>
+            <p style="font-family: poppins;">Daily: 10 AM - 6.00 PM</p>
+            <p style="font-family: poppins;">Sunday & Holidays: Closed</p>
+            <p class="text-[12px]  md:text-[14px] font-semibold flex items-center gap-x-2">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="text-[20px] font-bold" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                <path
+                  d="M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm1 17H7V4h10v14zm-3 3h-4v-1h4v1z">
+                </path>
+              </svg> &nbsp; +91 9884683888
+            </p>
+            <p class="text-[12px]  md:text-[14px] font-semibold flex items-center gap-x-2">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="text-[20px] font-bold" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                <path
+                  d="M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm1 17H7V4h10v14zm-3 3h-4v-1h4v1z">
+                </path>
+              </svg> &nbsp; +91 9884428688
+            </p>
+            <p class="text-[12px]  md:text-[14px] font-semibold flex items-center gap-x-2">
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" class="text-[20px] font-bold" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3h-2a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2z"></path>
+                <path d="M16 4h-11a3 3 0 0 0 -3 3v10a3 3 0 0 0 3 3h11"></path>
+                <path d="M12 8h-6v3h6z"></path>
+                <path d="M12 14v.01"></path>
+                <path d="M9 14v.01"></path>
+                <path d="M6 14v.01"></path>
+                <path d="M12 17v.01"></path>
+                <path d="M9 17v.01"></path>
+                <path d="M6 17v.01"></path>
+              </svg> &nbsp; 04424815365
+            </p>
+          </div><!-- /.footer-widget -->
+        </div><!-- /.col-lg-3 -->
+        <div class="col-md-3">
+          <!-- <h3>Follow Us <div class="bottom_line"><span></span></div></h3> -->
+          <div class="social_icons">
+            <section class="flex justify-center items-center mb-4">
+              <a href="https://www.facebook.com/profile.php?id=61559751436051" target="_blank">
+                <button
+                  class="social_icon group flex justify-center p-2 rounded-md drop-shadow-xl bg-gray-900 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-[12px] sm:text-[14px]" height="0.5em" width="0.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                    </path>
+                  </svg>
+                </button>
+              </a>
+            </section>
+            <section class="flex justify-center items-center mb-4">
+              <a href="https://www.instagram.com/cinema_factory_academy/" target="_blank">
+                <button
+                  class="social_icon group flex justify-center p-2 rounded-md drop-shadow-xl bg-gray-900 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                    class="text-[12px] sm:text-[14px]" height="0.5em" width="0.5em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                    </path>
+                  </svg>
+                </button>
+              </a>
+            </section>
+            <section class="flex justify-center items-center mb-4">
+              <a href="https://www.threads.net/@cinema_factory_academy" target="_blank">
+                <button
+                  class="social_icon group flex justify-center p-2 rounded-md drop-shadow-xl bg-gray-900 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                    class="text-[12px] sm:text-[14px]" height="0.5em" width="0.5em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z">
+                    </path>
+                  </svg>
+                </button>
+              </a>
+            </section>
+            <section class="flex justify-center items-center mb-4">
+              <a href="https://api.whatsapp.com/send?phone=9884683888" target="_blank">
+                <button
+                  class="social_icon group flex justify-center p-2 rounded-md drop-shadow-xl bg-gray-900 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-[12px] sm:text-[14px]" height="0.5em" width="0.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                    <path
+                      d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                    </path>
+                  </svg>
+                </button>
+              </a>
+            </section>
+          </div>
+        </div>
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+    <div class="container-fluid bg-secondary py-3 text-center">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <p class="mb-0" style="color: #fff;  font-weight: 500;">&copy; 2024 Vishnu Ads and Ventures Pvt Ltd.
+            All Rights Reserved</p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+
+
+  </footer><!-- /.site-footer -->
+  <!-- end footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    function openCity(cityName) {
+      var i;
+      var x = document.getElementsByClassName("tab-pane");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#tab1-tab').on('click', function () {
+        $(this).addClass('active');
+        $('#tab2-tab').removeClass('active');
+        $('#tab1').addClass('show active');
+        $('#tab2').removeClass('show active');
+      });
+
+      $('#tab2-tab').on('click', function () {
+        $(this).addClass('active');
+        $('#tab1-tab').removeClass('active');
+        $('#tab1').removeClass('show active');
+        $('#tab2').addClass('show active');
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <script>
+
+    $(document).ready(function () {
+      let currentIndex = 0;
+      const testimonials = $('.testimonial');
+
+      function showNextTestimonial() {
+        testimonials.eq(currentIndex).removeClass('active');
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        testimonials.eq(currentIndex).addClass('active');
+      }
+
+      setInterval(showNextTestimonial, 3000); // Change testimonial every 3 seconds
+    });
+
+    function openNav() {
+      document.getElementById("mySidenav").style.left = "0";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.left = "-250px";
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script>
+
+    TweenMax.from('.logo', 1, {
+      delay: 1.2,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom('.menu-links ul li', 1, {
+      delay: 1.2,
+      opacity: 0,
+      x: -20,
+      ease: Power4.easeInOut
+    }, 0.08)
+
+    TweenMax.from('.search', 1, {
+      delay: 1.6,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.cart', 1, {
+      delay: 1.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.border-bottom', 1, {
+      delay: 1.4,
+      width: '100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.subtitle', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.title', 1, {
+      delay: 2.2,
+      width: '100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.desc', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.readmore', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.slider', 1, {
+      delay: 3,
+      opacity: 1,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-1', 1, {
+      delay: 2.2,
+      width: '450px',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-2', 1, {
+      delay: 2.2,
+      width: '300px',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-3', 1, {
+      delay: 2.2,
+      width: '300px',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.first', 1.5, {
+      delay: .2,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.second', 1.5, {
+      delay: .4,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.third', 1.5, {
+      delay: .6,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+
+    // whole page animation
+    {
+      var nw = gsap.timeline({ defaults: { ease: Expo.easeInOut } });
+
+      nw.to('.overlay2', 1, {
+        top: "-100"
+      })
+      nw.to('.overlay1', 1, {
+        delay: .4,
+        top: "-100%"
+      })
+      nw.from('.container-fluid img', {
+        scale: 3, opacity: 0
+      })
+      nw.from('#h2', 1, {
+        x: -700, opacity: 0
+      })
+      nw.from('h1', 1, {
+        opacity: 0
+      })
+
+      nw.from('.right p', 1.6, {
+        opacity: 0,
+        y: 30
+      }, 'start')
+    }
+
+    {
+      gsap.to('.Limg .overlay2', 1, {
+        top: '100%'
+      })
+      gsap.to('.Limg .overlay1', 1, {
+        delay: .4,
+        top: '100%'
+      })
+    }
+    // faq
+
+    $(document).ready(function () {
+      // Add minus icon for collapse element which is open by default
+      $(".collapse.show").each(function () {
+        $(this).prev(".card-header").addClass("highlight");
+      });
+
+      // Highlight open collapsed element 
+      $(".card-header .btn").click(function () {
+        $(".card-header").not($(this).parents()).removeClass("highlight");
+        $(this).parents(".card-header").toggleClass("highlight");
+      });
+    });
+
+    function toggleFaq(element) {
+      var body = element.nextElementSibling;
+      var icon = element.querySelector('.faq-item-icon i');
+      if (body.style.display === "none" || body.style.display === "") {
+        body.style.display = "block";
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+      } else {
+        body.style.display = "none";
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+      }
+    }
+
+    document.querySelectorAll('.faq-item-body').forEach(item => item.style.display = 'none');
+
+    // flip
+    const flipBook = (elBook) => {
+      elBook.style.setProperty("--c", 1); // Set current page to the first page (0)
+      elBook.querySelectorAll(".page").forEach((page, idx) => {
+        page.style.setProperty("--i", idx);
+        page.addEventListener("click", (evt) => {
+          if (evt.target.closest("a")) return;
+          const curr = evt.target.closest(".back") ? idx : idx + 1;
+          elBook.style.setProperty("--c", curr);
+        });
+      });
+    };
+
+    document.querySelectorAll(".book").forEach(flipBook);
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
